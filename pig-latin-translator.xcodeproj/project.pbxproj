@@ -1,0 +1,589 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AB54B852766529A007EDE28 /* pig-latin-translator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2AB54B8A2766529C007EDE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB54B892766529C007EDE28 /* Assets.xcassets */; };
+		2AB54B902766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2AB54B952766529D007EDE28 /* pig_latin_translatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B942766529D007EDE28 /* pig_latin_translatorApp.swift */; };
+		2AB54B972766529D007EDE28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B962766529D007EDE28 /* ContentView.swift */; };
+		2AB54B992766529D007EDE28 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B982766529D007EDE28 /* NotificationController.swift */; };
+		2AB54B9B2766529D007EDE28 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B9A2766529D007EDE28 /* NotificationView.swift */; };
+		2AB54B9D2766529D007EDE28 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B9C2766529D007EDE28 /* ComplicationController.swift */; };
+		2AB54B9F2766529D007EDE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB54B9E2766529D007EDE28 /* Assets.xcassets */; };
+		2AB54BA22766529D007EDE28 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB54BA12766529D007EDE28 /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2AB54B862766529A007EDE28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB54B7A2766529A007EDE28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AB54B832766529A007EDE28;
+			remoteInfo = "pig-latin-translator WatchKit App";
+		};
+		2AB54B912766529D007EDE28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2AB54B7A2766529A007EDE28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AB54B8E2766529D007EDE28;
+			remoteInfo = "pig-latin-translator WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2AB54BAA2766529D007EDE28 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				2AB54B902766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB54BAE2766529D007EDE28 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				2AB54B852766529A007EDE28 /* pig-latin-translator WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2AB54B802766529A007EDE28 /* pig-latin-translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pig-latin-translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pig-latin-translator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB54B892766529C007EDE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "pig-latin-translator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB54B942766529D007EDE28 /* pig_latin_translatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pig_latin_translatorApp.swift; sourceTree = "<group>"; };
+		2AB54B962766529D007EDE28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AB54B982766529D007EDE28 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		2AB54B9A2766529D007EDE28 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		2AB54B9C2766529D007EDE28 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		2AB54B9E2766529D007EDE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2AB54BA12766529D007EDE28 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2AB54BA32766529D007EDE28 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2AB54BA42766529D007EDE28 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AB54B8C2766529D007EDE28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2AB54B792766529A007EDE28 = {
+			isa = PBXGroup;
+			children = (
+				2AB54B882766529A007EDE28 /* pig-latin-translator WatchKit App */,
+				2AB54B932766529D007EDE28 /* pig-latin-translator WatchKit Extension */,
+				2AB54B812766529A007EDE28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2AB54B812766529A007EDE28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2AB54B802766529A007EDE28 /* pig-latin-translator.app */,
+				2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */,
+				2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2AB54B882766529A007EDE28 /* pig-latin-translator WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				2AB54B892766529C007EDE28 /* Assets.xcassets */,
+			);
+			path = "pig-latin-translator WatchKit App";
+			sourceTree = "<group>";
+		};
+		2AB54B932766529D007EDE28 /* pig-latin-translator WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2AB54B942766529D007EDE28 /* pig_latin_translatorApp.swift */,
+				2AB54B962766529D007EDE28 /* ContentView.swift */,
+				2AB54B982766529D007EDE28 /* NotificationController.swift */,
+				2AB54B9A2766529D007EDE28 /* NotificationView.swift */,
+				2AB54B9C2766529D007EDE28 /* ComplicationController.swift */,
+				2AB54B9E2766529D007EDE28 /* Assets.xcassets */,
+				2AB54BA32766529D007EDE28 /* Info.plist */,
+				2AB54BA42766529D007EDE28 /* PushNotificationPayload.apns */,
+				2AB54BA02766529D007EDE28 /* Preview Content */,
+			);
+			path = "pig-latin-translator WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		2AB54BA02766529D007EDE28 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2AB54BA12766529D007EDE28 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AB54B7F2766529A007EDE28 /* pig-latin-translator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB54BAF2766529D007EDE28 /* Build configuration list for PBXNativeTarget "pig-latin-translator" */;
+			buildPhases = (
+				2AB54B7E2766529A007EDE28 /* Resources */,
+				2AB54BAE2766529D007EDE28 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AB54B872766529A007EDE28 /* PBXTargetDependency */,
+			);
+			name = "pig-latin-translator";
+			productName = "pig-latin-translator";
+			productReference = 2AB54B802766529A007EDE28 /* pig-latin-translator.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		2AB54B832766529A007EDE28 /* pig-latin-translator WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB54BAB2766529D007EDE28 /* Build configuration list for PBXNativeTarget "pig-latin-translator WatchKit App" */;
+			buildPhases = (
+				2AB54B822766529A007EDE28 /* Resources */,
+				2AB54BAA2766529D007EDE28 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2AB54B922766529D007EDE28 /* PBXTargetDependency */,
+			);
+			name = "pig-latin-translator WatchKit App";
+			productName = "pig-latin-translator WatchKit App";
+			productReference = 2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		2AB54B8E2766529D007EDE28 /* pig-latin-translator WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2AB54BA72766529D007EDE28 /* Build configuration list for PBXNativeTarget "pig-latin-translator WatchKit Extension" */;
+			buildPhases = (
+				2AB54B8B2766529D007EDE28 /* Sources */,
+				2AB54B8C2766529D007EDE28 /* Frameworks */,
+				2AB54B8D2766529D007EDE28 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pig-latin-translator WatchKit Extension";
+			productName = "pig-latin-translator WatchKit Extension";
+			productReference = 2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2AB54B7A2766529A007EDE28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					2AB54B7F2766529A007EDE28 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					2AB54B832766529A007EDE28 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					2AB54B8E2766529D007EDE28 = {
+						CreatedOnToolsVersion = 13.1;
+					};
+				};
+			};
+			buildConfigurationList = 2AB54B7D2766529A007EDE28 /* Build configuration list for PBXProject "pig-latin-translator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2AB54B792766529A007EDE28;
+			productRefGroup = 2AB54B812766529A007EDE28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2AB54B7F2766529A007EDE28 /* pig-latin-translator */,
+				2AB54B832766529A007EDE28 /* pig-latin-translator WatchKit App */,
+				2AB54B8E2766529D007EDE28 /* pig-latin-translator WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2AB54B7E2766529A007EDE28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB54B822766529A007EDE28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB54B8A2766529C007EDE28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2AB54B8D2766529D007EDE28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB54BA22766529D007EDE28 /* Preview Assets.xcassets in Resources */,
+				2AB54B9F2766529D007EDE28 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2AB54B8B2766529D007EDE28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2AB54B992766529D007EDE28 /* NotificationController.swift in Sources */,
+				2AB54B972766529D007EDE28 /* ContentView.swift in Sources */,
+				2AB54B9D2766529D007EDE28 /* ComplicationController.swift in Sources */,
+				2AB54B952766529D007EDE28 /* pig_latin_translatorApp.swift in Sources */,
+				2AB54B9B2766529D007EDE28 /* NotificationView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2AB54B872766529A007EDE28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AB54B832766529A007EDE28 /* pig-latin-translator WatchKit App */;
+			targetProxy = 2AB54B862766529A007EDE28 /* PBXContainerItemProxy */;
+		};
+		2AB54B922766529D007EDE28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AB54B8E2766529D007EDE28 /* pig-latin-translator WatchKit Extension */;
+			targetProxy = 2AB54B912766529D007EDE28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AB54BA52766529D007EDE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2AB54BA62766529D007EDE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2AB54BA82766529D007EDE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pig-latin-translator WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZAAMW68LZ8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pig-latin-translator WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "pig-latin-translator WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		2AB54BA92766529D007EDE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"pig-latin-translator WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = ZAAMW68LZ8;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "pig-latin-translator WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "pig-latin-translator WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		2AB54BAC2766529D007EDE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAAMW68LZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = pig_latin_translator_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "pig-latin-translator WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Debug;
+		};
+		2AB54BAD2766529D007EDE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAAMW68LZ8;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = pig_latin_translator_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "pig-latin-translator WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.0;
+			};
+			name = Release;
+		};
+		2AB54BB02766529D007EDE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAAMW68LZ8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2AB54BB12766529D007EDE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZAAMW68LZ8;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AB54B7D2766529A007EDE28 /* Build configuration list for PBXProject "pig-latin-translator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB54BA52766529D007EDE28 /* Debug */,
+				2AB54BA62766529D007EDE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AB54BA72766529D007EDE28 /* Build configuration list for PBXNativeTarget "pig-latin-translator WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB54BA82766529D007EDE28 /* Debug */,
+				2AB54BA92766529D007EDE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AB54BAB2766529D007EDE28 /* Build configuration list for PBXNativeTarget "pig-latin-translator WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB54BAC2766529D007EDE28 /* Debug */,
+				2AB54BAD2766529D007EDE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2AB54BAF2766529D007EDE28 /* Build configuration list for PBXNativeTarget "pig-latin-translator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AB54BB02766529D007EDE28 /* Debug */,
+				2AB54BB12766529D007EDE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2AB54B7A2766529A007EDE28 /* Project object */;
+}
