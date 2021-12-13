@@ -10,8 +10,8 @@
 		2AB54B852766529A007EDE28 /* pig-latin-translator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2AB54B8A2766529C007EDE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB54B892766529C007EDE28 /* Assets.xcassets */; };
 		2AB54B902766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		2AB54B952766529D007EDE28 /* pig_latin_translatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B942766529D007EDE28 /* pig_latin_translatorApp.swift */; };
-		2AB54B972766529D007EDE28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B962766529D007EDE28 /* ContentView.swift */; };
+		2AB54B952766529D007EDE28 /* PigLatinTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B942766529D007EDE28 /* PigLatinTranslator.swift */; };
+		2AB54B972766529D007EDE28 /* DictateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B962766529D007EDE28 /* DictateView.swift */; };
 		2AB54B992766529D007EDE28 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B982766529D007EDE28 /* NotificationController.swift */; };
 		2AB54B9B2766529D007EDE28 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B9A2766529D007EDE28 /* NotificationView.swift */; };
 		2AB54B9D2766529D007EDE28 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B9C2766529D007EDE28 /* ComplicationController.swift */; };
@@ -66,8 +66,8 @@
 		2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pig-latin-translator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB54B892766529C007EDE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "pig-latin-translator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AB54B942766529D007EDE28 /* pig_latin_translatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pig_latin_translatorApp.swift; sourceTree = "<group>"; };
-		2AB54B962766529D007EDE28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2AB54B942766529D007EDE28 /* PigLatinTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigLatinTranslator.swift; sourceTree = "<group>"; };
+		2AB54B962766529D007EDE28 /* DictateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictateView.swift; sourceTree = "<group>"; };
 		2AB54B982766529D007EDE28 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		2AB54B9A2766529D007EDE28 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
 		2AB54B9C2766529D007EDE28 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
@@ -118,8 +118,8 @@
 		2AB54B932766529D007EDE28 /* pig-latin-translator WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				2AB54B942766529D007EDE28 /* pig_latin_translatorApp.swift */,
-				2AB54B962766529D007EDE28 /* ContentView.swift */,
+				2AB54B942766529D007EDE28 /* PigLatinTranslator.swift */,
+				2AB54B962766529D007EDE28 /* DictateView.swift */,
 				2AB54B982766529D007EDE28 /* NotificationController.swift */,
 				2AB54B9A2766529D007EDE28 /* NotificationView.swift */,
 				2AB54B9C2766529D007EDE28 /* ComplicationController.swift */,
@@ -267,9 +267,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2AB54B992766529D007EDE28 /* NotificationController.swift in Sources */,
-				2AB54B972766529D007EDE28 /* ContentView.swift in Sources */,
+				2AB54B972766529D007EDE28 /* DictateView.swift in Sources */,
 				2AB54B9D2766529D007EDE28 /* ComplicationController.swift in Sources */,
-				2AB54B952766529D007EDE28 /* pig_latin_translatorApp.swift in Sources */,
+				2AB54B952766529D007EDE28 /* PigLatinTranslator.swift in Sources */,
 				2AB54B9B2766529D007EDE28 /* NotificationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

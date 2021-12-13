@@ -8,11 +8,12 @@
 import SwiftUI
 
 @main
-struct pig_latin_translatorApp: App {
+struct PigLatinTranslator: App {
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                ContentView()
+                DictateView()
             }
         }
 
