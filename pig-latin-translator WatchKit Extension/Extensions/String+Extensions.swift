@@ -10,6 +10,7 @@ import Foundation
 extension String {
     
     func translateToPigLatin() -> String {
+        guard !self.isEmpty else { return "" }
         
         //convert text to string array
         let textArray = self.lowercased().components(separatedBy: " ")
