@@ -13,7 +13,7 @@ struct PigLatinTranslator: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
             NavigationView {
-                DictateView()
+                MainView()
             }
         }
 
