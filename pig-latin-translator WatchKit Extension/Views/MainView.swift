@@ -6,54 +6,67 @@
 //
 
 import SwiftUI
+import WatchKit
 import Foundation
 
 struct MainView: View {
     
-     @State private var capturedText = ""
-   
-    var body: some View {
+    @State private var capturedText = ""
+    @State private var pigLatinText = ""
+    
+    //Text properties
+    private let promptImage = "mic.circle"
+    private let promptText = " Tap to Translate"
+    
+    private var promptTextLabel: Text {
+        if capturedText.isEmpty {
+            return Text(Image(systemName: promptImage)) + Text(promptText)
+        }
         
-        VStack {
-            Image(systemName: "mic.circle")
-                .resizable()
-                .scaledToFit()
-                .frame(maxWidth: 125, maxHeight: 125, alignment: .center)
-                
-            Text("Tap to Translate")
-                .padding(10)
-            
-        }
-            .onTapGesture {
-                presentInputController()
-            }
+        return Text(capturedText.translateToPigLatin())
     }
     
-    private func presentInputController() {
-        presentInputController(withSuggestions: []) { result in
-            guard !result.isEmpty else { return }
-            
-            
-            // handle result from input controller
-            print(result)
-            print(result.translateToPigLatin())
-        }
-    }
-}
+    var body: some View {
 
-extension View {
-    typealias StringCompletion = (String) -> Void
+        VStack {
+            promptTextLabel
+                .lineLimit(nil)
+                .padding(10)
+                .onTapGesture {
+                    presentInputController()
+                }
+            
+            Spacer()
+            
+            HStack(alignment: .center) {
+                Button("Send") {
+                    
+                }
+                    .disabled(capturedText.isEmpty)
+                
+                
+                Button("Clear", action: {
+                    capturedText.removeAll()
+                })
+                    .disabled(capturedText.isEmpty)
+            }
+        }
+        .padding()
+        .onChange(of: capturedText) { newValue in
+            capturedText = newValue
+            pigLatinText = capturedText.translateToPigLatin()
+            print(pigLatinText)
+        }
+    }
     
-    func presentInputController(withSuggestions suggestions: [String], completion: @escaping StringCompletion) {
+    func presentInputController() {
         WKExtension.shared()
             .visibleInterfaceController?
-            .presentTextInputController(withSuggestions: suggestions, allowedInputMode: .plain, completion: { result in
-                guard let result = result as? [String], let firstElement = result.first else {
-                    completion("")
-                    return
-            }
+            .presentTextInputController(withSuggestions: [], allowedInputMode: .plain, completion: { result in
                 
-                completion(firstElement)
+                if let result = result as? [String], let firstElement = result.first {
+                    capturedText = firstElement
+                }
             })
     }
 }
