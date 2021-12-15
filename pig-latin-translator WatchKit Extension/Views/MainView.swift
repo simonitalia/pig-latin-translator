@@ -14,55 +14,77 @@ struct MainView: View {
     @State private var capturedText = ""
     @State private var pigLatinText = ""
     
-    //Text properties
-    private let promptImage = "mic.circle"
+    //text and image properties
     private let promptText = " Tap to Translate"
+    private let promptMicImage = "mic.circle"
+    private let promptTapImage = "hand.tap.fill"
     
-    private var promptTextLabel: Text {
+    private var promptTextView: Text {
         if capturedText.isEmpty {
-            return Text(Image(systemName: promptImage)) + Text(promptText)
+            return Text(Image(systemName: promptTapImage)) + Text(promptText)
         }
         
         return Text(capturedText.translateToPigLatin())
     }
     
+    //body container
     var body: some View {
 
         VStack {
-            promptTextLabel
-                .lineLimit(nil)
-                .padding(10)
-                .onTapGesture {
-                    presentInputController()
+            
+            // image and text container
+            VStack(spacing: 20) {
+                if capturedText.isEmpty {
+                    Image(systemName: promptMicImage)
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 60, height: 60, alignment: .center)
+                        .padding(.top)
+                        .foregroundColor(Color.blue)
                 }
+                
+                promptTextView
+                    .lineLimit(nil)
+            }
+            .onTapGesture { presentInputController() }
             
-            Spacer()
-            
-            HStack(alignment: .center) {
-                Button("Send") {
-                print("Message Body: \(pigLatinText)")
+            // message buttons container
+            if !capturedText.isEmpty {
+                
+                Spacer()
+                
+                HStack {
                     
-                    // format message body payload (pig latin text) as safe url
-                    let messageBody = pigLatinText
-                    let urlSafeBody = messageBody.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
-        
-                    // trigger url
-                    if let urlSafeBody = urlSafeBody, let url = NSURL(string: "sms:&body=\(urlSafeBody)") { WKExtension.shared().openSystemURL(url as URL) }
+                    // send message button
+                    Button("Send") {
 
+                        // format message body payload (pig latin text) as safe url
+                        let messageBody = pigLatinText
+                        let urlSafeBody = messageBody.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+            
+                        // trigger url
+                        if let urlSafeBody = urlSafeBody, let url = NSURL(string: "sms:&body=\(urlSafeBody)") { WKExtension.shared().openSystemURL(url as URL) }
+
+                    }
+                        .disabled(capturedText.isEmpty)
+                        .foregroundColor(.blue)
+                    
+                    // clear message button
+                    Button("Cancel", action: {
+                        capturedText.removeAll()
+                    })
+                        .disabled(capturedText.isEmpty)
+                        .foregroundColor(.red)
                 }
-                    .disabled(capturedText.isEmpty)
-                
-                
-                Button("Clear", action: {
-                    capturedText.removeAll()
-                })
-                    .disabled(capturedText.isEmpty)
             }
         }
-        .padding()
         .onChange(of: capturedText) { newValue in
             capturedText = newValue
             pigLatinText = capturedText.translateToPigLatin()
+            
+            #if DEBUG
+            print("Message Body: \(pigLatinText)")
+            #endif
         }
     }
     
