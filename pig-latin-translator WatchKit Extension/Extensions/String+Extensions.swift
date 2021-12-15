@@ -15,7 +15,7 @@ extension String {
         //convert text to string array
         let textArray = self.lowercased().components(separatedBy: " ")
         
-        let vowels = ["a", "e", "i", "o", "u", "y"]
+        let vowels = ["a", "e", "i", "o", "u"]
         let aySuffix = "ay"
         let waySuffix = "way"
         
