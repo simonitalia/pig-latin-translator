@@ -15,9 +15,10 @@ struct MainView: View {
     @State private var pigLatinText = ""
     
     //text and image properties
-    private let promptText = " Tap to Translate"
-    private let promptMicImage = "mic.circle"
+    private let promptImage = "mic.circle.fill"
+    
     private let promptTapImage = "hand.tap.fill"
+    private let promptText = " Tap to Translate"
     
     private var promptTextView: Text {
         if capturedText.isEmpty {
@@ -33,13 +34,12 @@ struct MainView: View {
         VStack {
             
             // image and text container
-            VStack(spacing: 20) {
+            VStack(spacing: 10) {
                 if capturedText.isEmpty {
-                    Image(systemName: promptMicImage)
+                    Image(systemName: promptImage)
                         .resizable()
                         .scaledToFill()
                         .frame(width: 60, height: 60, alignment: .center)
-                        .padding(.top)
                         .foregroundColor(Color.blue)
                 }
                 
