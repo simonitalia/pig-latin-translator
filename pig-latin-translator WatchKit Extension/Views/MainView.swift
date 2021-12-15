@@ -40,7 +40,15 @@ struct MainView: View {
             
             HStack(alignment: .center) {
                 Button("Send") {
+                print("Message Body: \(pigLatinText)")
                     
+                    // format message body payload (pig latin text) as safe url
+                    let messageBody = pigLatinText
+                    let urlSafeBody = messageBody.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+        
+                    // trigger url
+                    if let urlSafeBody = urlSafeBody, let url = NSURL(string: "sms:&body=\(urlSafeBody)") { WKExtension.shared().openSystemURL(url as URL) }
+
                 }
                     .disabled(capturedText.isEmpty)
                 
@@ -55,14 +63,13 @@ struct MainView: View {
         .onChange(of: capturedText) { newValue in
             capturedText = newValue
             pigLatinText = capturedText.translateToPigLatin()
-            print(pigLatinText)
         }
     }
     
     func presentInputController() {
         WKExtension.shared()
             .visibleInterfaceController?
-            .presentTextInputController(withSuggestions: [], allowedInputMode: .plain, completion: { result in
+            .presentTextInputController(withSuggestions: nil, allowedInputMode: .plain, completion: { result in
                 
                 if let result = result as? [String], let firstElement = result.first {
                     capturedText = firstElement
