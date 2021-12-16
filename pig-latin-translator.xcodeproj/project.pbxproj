@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AB54B852766529A007EDE28 /* pig-latin-translator WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2AB54B852766529A007EDE28 /* Pig Latin Translator.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 2AB54B842766529A007EDE28 /* Pig Latin Translator.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2AB54B8A2766529C007EDE28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB54B892766529C007EDE28 /* Assets.xcassets */; };
 		2AB54B902766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		2AB54B952766529D007EDE28 /* PigLatinTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB54B942766529D007EDE28 /* PigLatinTranslator.swift */; };
@@ -55,7 +55,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				2AB54B852766529A007EDE28 /* pig-latin-translator WatchKit App.app in Embed Watch Content */,
+				2AB54B852766529A007EDE28 /* Pig Latin Translator.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -64,7 +64,7 @@
 
 /* Begin PBXFileReference section */
 		2AB54B802766529A007EDE28 /* Pig Latin Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pig Latin Translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pig-latin-translator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB54B842766529A007EDE28 /* Pig Latin Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pig Latin Translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB54B892766529C007EDE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "pig-latin-translator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB54B942766529D007EDE28 /* PigLatinTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PigLatinTranslator.swift; sourceTree = "<group>"; };
@@ -103,7 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				2AB54B802766529A007EDE28 /* Pig Latin Translator.app */,
-				2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */,
+				2AB54B842766529A007EDE28 /* Pig Latin Translator.app */,
 				2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -200,7 +200,7 @@
 			);
 			name = "pig-latin-translator WatchKit App";
 			productName = "pig-latin-translator WatchKit App";
-			productReference = 2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */;
+			productReference = 2AB54B842766529A007EDE28 /* Pig Latin Translator.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		2AB54B8E2766529D007EDE28 /* pig-latin-translator WatchKit Extension */ = {
@@ -507,11 +507,10 @@
 				DEVELOPMENT_TEAM = ZAAMW68LZ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = pig_latin_translator_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "pig-latin-translator WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pig Latin Translator";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -532,11 +531,10 @@
 				DEVELOPMENT_TEAM = ZAAMW68LZ8;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = pig_latin_translator_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "pig-latin-translator WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pig Latin Translator";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
