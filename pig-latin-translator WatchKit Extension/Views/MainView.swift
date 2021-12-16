@@ -11,11 +11,16 @@ import Foundation
 
 struct MainView: View {
     
+    // App themes
+    private let appThemeColor = Color.purple
+    private let destrcutionButtonColor = Color.red
+    private let primaryButtonColor = Color.blue
+    
     @State private var capturedText = ""
     @State private var pigLatinText = ""
     
     //text and image properties
-    private let promptImage = "mic.circle.fill"
+    private let promptImage = "mic.circle"
     
     private let promptTapImage = "hand.tap.fill"
     private let promptText = " Tap to Translate"
@@ -40,11 +45,12 @@ struct MainView: View {
                         .resizable()
                         .scaledToFill()
                         .frame(width: 60, height: 60, alignment: .center)
-                        .foregroundColor(Color.blue)
+                        .foregroundColor(appThemeColor)
                 }
                 
                 promptTextView
                     .lineLimit(nil)
+                    .foregroundColor(appThemeColor)
             }
             .onTapGesture { presentInputController() }
             
@@ -67,14 +73,14 @@ struct MainView: View {
 
                     }
                         .disabled(capturedText.isEmpty)
-                        .foregroundColor(.blue)
+                        .foregroundColor(primaryButtonColor)
                     
                     // clear message button
                     Button("Cancel", action: {
                         capturedText.removeAll()
                     })
                         .disabled(capturedText.isEmpty)
-                        .foregroundColor(.red)
+                        .foregroundColor(destrcutionButtonColor)
                 }
             }
         }

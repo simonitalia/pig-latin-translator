@@ -63,7 +63,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2AB54B802766529A007EDE28 /* pig-latin-translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pig-latin-translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AB54B802766529A007EDE28 /* Pig Latin Translator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pig Latin Translator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pig-latin-translator WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2AB54B892766529C007EDE28 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "pig-latin-translator WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,7 +102,7 @@
 		2AB54B812766529A007EDE28 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2AB54B802766529A007EDE28 /* pig-latin-translator.app */,
+				2AB54B802766529A007EDE28 /* Pig Latin Translator.app */,
 				2AB54B842766529A007EDE28 /* pig-latin-translator WatchKit App.app */,
 				2AB54B8F2766529D007EDE28 /* pig-latin-translator WatchKit Extension.appex */,
 			);
@@ -183,7 +183,7 @@
 			);
 			name = "pig-latin-translator";
 			productName = "pig-latin-translator";
-			productReference = 2AB54B802766529A007EDE28 /* pig-latin-translator.app */;
+			productReference = 2AB54B802766529A007EDE28 /* Pig Latin Translator.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
 		2AB54B832766529A007EDE28 /* pig-latin-translator WatchKit App */ = {
@@ -554,7 +554,7 @@
 				DEVELOPMENT_TEAM = ZAAMW68LZ8;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pig Latin Translator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -567,7 +567,7 @@
 				DEVELOPMENT_TEAM = ZAAMW68LZ8;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.italiasimon.pig-latin-translator";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pig Latin Translator";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
